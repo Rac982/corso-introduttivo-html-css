@@ -31,6 +31,14 @@ p {
     font-size: 1.25rem;
     line-height: 1.85rem;
     color: var(--text-primary-color);
+    margin: 0.8rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3.20rem;
+    color: var(--main-text-color);
+    padding-bottom: 1.6rem;
 }
 
 button {
@@ -88,6 +96,7 @@ nav .navbar__menu {
     font-weight: 600;
     padding: 4% 0;
     color: #000000;
+    justify-content: end;
 }
 
 nav .navbar__menu .navbar__menu-item a {
@@ -95,12 +104,7 @@ nav .navbar__menu .navbar__menu-item a {
     transition: all ease-in-out 0.15s;
 }
 
-nav .navbar__menu .navbar__menu-item a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-nav .navbar__menu .navbar__menu-item a:focus {
+nav .navbar__menu .navbar__menu-item a:hover, a:focus, a:link {
     color: var(--primary-color);
     text-decoration: underline;
 }
@@ -125,7 +129,7 @@ nav .navbar__logo img {
 
 header {
     background: transparent;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 header * {
@@ -151,7 +155,7 @@ header .header__content .header__content-left .header__content-left-cta {
 }
 
 header .header__content .header__content-right img {
-    width: 540px;
+    width: 730px;
     height: auto;
 }
 
@@ -165,7 +169,11 @@ main section#info-section {
 
 main section#info-section .card-info {
     width: var(--card-info-w);
-    margin-top: 4rem;
+    height: 30rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    border-radius: 1rem;
 }
 
 main section#info-section .card-info .card-info__header img {
@@ -179,6 +187,17 @@ main section#info-section .card-info .card-info__body h3 {
 }
 
 main section#info-section .card-info .card-info__body p {
+    color: white;
     font-size: 1.15rem;
     line-height: 1.65rem;
+    margin-bottom: 3rem;
+}
+
+main section#text-section {
+    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(244,242,242,1) 100%);
+    padding: 7rem 0;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-info-gap);
 }
