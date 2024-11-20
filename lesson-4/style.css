@@ -155,7 +155,7 @@ header .header__content .header__content-left .header__content-left-cta {
 }
 
 header .header__content .header__content-right img {
-    width: 730px;
+    max-width: 730px;
     height: auto;
 }
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pizza Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <nav class="wrapper">
+        <div class="container flex justify-between">
+            <div class="nav__logo">
+                <h3>Pizza Pie</h3>
+            </div>
+            <div class="nav__menu flex gap-40">
+                <div class="nav__menu-item">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a href="#about">About</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a href="#menu">Menu</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a href="#service">Service</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="wrapper background-image" style="background-image: url('bg-header.jpg');">
+        <div class="container flex items-center px-12 py-12">
+            <div class="header__title">
+                <h1>Pizza Taste</h1>
+                <h2>
+                    The tasty pizza of 
+                    <br />
+                    your choice
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta nihil labore! Quia consequatur culpa fugiat blanditiis eligendi repellat aperiam praesentium vel beatae aut aliquid hic maxime, nulla suscipit rem?
+                </p>
+                <div class="header__title-cta flex justify-left gap-20">
+                    <div class="header__title-button">
+                        <button class="btn btn-primary">View Menu</button>
+                    </div>
+                    <div class="header__title-button">
+                        <button class="btn btn-inverse">Contact Us</button>
+                    </div>
+                </div>
+                <div class="header__title-social flex justify-left gap-40">
+                    <div class="header__title-icon">
+                        <img src="./Svg/facebook-app-symbol.svg">
+                    </div>
+                    <div class="header__title-icon">
+                        <img src="./Svg/instagram.svg">
+                    </div>
+                    <div class="header__title-icon">
+                        <img src="./Svg/linkedin.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper" id="card">
+        <div class="container flex justify-between p-12">
+            <div class="card-info" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(244, 242, 242, 0) 100%), url('https://img.freepik.com/free-photo/top-view-pepperoni-pizza-tray_23-2148765306.jpg?t=st=1732122633~exp=1732126233~hmac=5aedc0d8ab5a7a732b523cf79ed61ff97d8630d7ce48c2c254c308f2b2ff0f34&w=740'); background-size: cover;">
+                <div class="card-info__body p-12">
+                    <h3>HOT SALAMI</h3>
+                    <button class="btn btn-primary">I want it now!</button>
+                </div>
+            </div>
+            <div class="card-info" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(244, 242, 242, 0) 100%), url('https://img.freepik.com/free-photo/side-view-slice-pizza-wooden-board_176474-120139.jpg?t=st=1732124099~exp=1732127699~hmac=cbbe7aa12a8bc12a9e52cbfc966b0b478694ac93159812583c3014cafdc2bea5&w=740'); background-size: cover;">
+                <div class="card-info__body p-12">
+                    <h3>MARGHERITA</h3>
+                    <button class="btn btn-primary">I want it now!</button>
+                </div>
+            </div>
+            <div class="card-info" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(244, 242, 242, 0) 100%), url('https://img.freepik.com/free-photo/close-up-italian-pizza-tomatoes_23-2148357148.jpg?t=st=1732124323~exp=1732127923~hmac=f4660011991632933bbb538969b65467ea255d6fcde34f93d49ed288cb571cab&w=740'); background-size: cover;">
+                <div class="card-info__body p-12">
+                    <h3>NAPLES</h3>
+                    <button class="btn btn-primary">I want it now!</button>
+                </div>
+            </div>
+            <div class="card-info" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(244, 242, 242, 0) 100%), url('https://img.freepik.com/free-photo/world-health-day-celebration-with-healthy-food_23-2151183648.jpg?t=st=1732124268~exp=1732127868~hmac=817272fdce70c83537259669ddca487b6f37c210d083ce3a0735f5f1b39e6364&w=740'); background-size: cover;">
+                <div class="card-info__body p-12">
+                    <h3>MEDITERANEAN</h3>
+                    <button class="btn btn-primary">I want it now!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!--
+<script>
+    ducument.addEventListner('scroll', () => {
+        const nav = document.querySelector('nav')
+
+        if(window.scrollY > 0) {
+            nav.classList.add('scrolled');
+       } else {
+            nav.classList.remove('scrolled')
+       }
+    })
+-->
+</script>
+</html>
