@@ -1,11 +1,11 @@
 :root {
     /* Viewport */
-    --max-width: 1480px;
+    --max-width: 1680px;
     /* Sizes */
     --general-padding: 4rem; /* 16px * 3rem = 48px */
     /* Colors */
-    --primary-color: #fd1714;
-    --text-color: #1e1c2a;
+    --primary-color: #d70705;
+    --text-color: #232323;
     --bg-color: #ffffff;
     --btn-hover-color: #b51513;
     /* Font */
@@ -16,5 +16,5 @@
     --navbar-h: 64px;
     --logo-size: 1.25rem; /* 16px * 1.25rem = 20px */
     --nav-box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
-    --card-max-width: 300px;
+    --card-max-width: 380px;
 }
