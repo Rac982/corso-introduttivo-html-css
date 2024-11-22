@@ -13,7 +13,7 @@
     --h1-size: 4rem; /* 16px * 4rem = 64px */ 
     --h2-size: 2.25rem; /* 16px * 2.25rem = 36px */
     /* Navbar */
-    --navbar-h: 64px;
+    --navbar-h: 94px;
     --logo-size: 1.25rem; /* 16px * 1.25rem = 20px */
     --nav-box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
     --card-max-width: 380px;

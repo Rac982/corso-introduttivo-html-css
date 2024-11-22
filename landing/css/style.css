@@ -24,7 +24,7 @@ html, body {
 
 p, span, a, div, button {
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -124,6 +124,10 @@ h2 {
     justify-content: flex-start;
 }
 
+.justify-right {
+    justify-content: end;
+}
+
 .items-center {
     align-items: center;
 }
@@ -158,23 +162,31 @@ nav {
     height: var(--navbar-h);
     justify-content: center;
     background-color: var(--bg-color);
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
+    z-index: 99;
+    transition: all ease-in-out 0.25s;
 }
 
 nav.scrolled {
     top: calc(var(--navbar-h) * -1);
   }
 
-nav .nav__logo h3 {
-    font-size: var(--logo-size);
-    color: var(--primary-color);
+nav.transparent {
+    background-color: transparent;
+}
+
+nav.transparent a {
+    color: white;
+}
+
+nav .nav__logo img {
+    max-height: 80px;
 }
 
 nav .nav__menu .nav__menu-item a {
     text-decoration: none;
-    color: var(--text-color);
     font-weight: 500;
     cursor: pointer;
 }
@@ -184,6 +196,10 @@ nav .nav__menu .nav__menu-item a:hover {
 }
 
 /* Header */
+
+header#home .container {
+    margin: 12rem 0;
+}
 
 header .header__title h2 {
     font-size: var(--h2-size);
@@ -261,16 +277,16 @@ main section#menu.container {
     max-width: var(--container-max-width);
     margin: auto;
     padding: 50px;
-    gap: 20px;
+}
+
+main section#menu .menu__cards {
     flex-wrap: wrap;
 }
 
 main section#menu .menu__card {
-    width: calc((100% / 4) - 20px);
     width: var(--card-max-width);
     text-align: center;
-    background-size: cover;
-    box-shadow: 3px 4px 17px 5px rgb(0 0 0 / 0.15);
+    box-shadow: 1px 3px 17px 5px rgb(0 0 0 / 0.15);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -280,7 +296,8 @@ main section#menu .menu__card .menu__card__body {
 }
 
 main section#menu .menu__card .menu__card__body h3 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 7.5rem;
+    font-size: 1.7rem;
 }
 
 /* Service*/
@@ -305,4 +322,34 @@ main section#service .service__card {
 
 main section#service .service__card .service__card__body h3 {
     margin: 1.5rem 0;
+}
+
+/* Contact */
+
+footer#contact .container {
+    margin: 8rem 0 2rem 0;
+}
+
+footer .col-contact {
+    width: calc((100% / 3));
+    line-height: 2.5rem;
+}
+
+footer .col-logo {
+    width: calc((100% / 3));
+
+}
+
+footer .col-logo img {
+    max-width: 200px;
+
+}
+
+footer .col-social {
+    width: calc((100% / 3));
+}
+
+
+footer .footer__bottom {
+    padding-top: 5rem;
 }
